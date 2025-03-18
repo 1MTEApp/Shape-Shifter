@@ -1,0 +1,43 @@
+body {
+ font-family: sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ padding: 20px;
+ background-color: #f4f4f4;
+}
+
+.controls {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ margin-right: 30px;
+ width: 250px;
+}
+
+.controls h2 {
+ margin-top: 0;
+ margin-bottom: 15px;
+ text-align: center;
+}
+
+.control-group {
+ margin-bottom: 15px;
+}
+
+.control-group label {
+ display: block;
+ margin-bottom: 5px;
+ font-weight: bold;
+}
+
+.control-group input {
+ width: 100%;
+}
+
+#drawingCanvas {
+ background-color: #eee;
+ border: 1px solid #ccc;
+ border-radius: 8px;
+}
