@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Интерактивные фигуры</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="controls">
+  <h2>Настройки</h2>
+  <label for="figure">Выберите фигуру:</label>
+  <select id="figure">
+   <option value="circle">Круг</option>
+   <option value="square">Квадрат</option>
+   <option value="polygon">Многоугольник</option>
+  </select>
+
+  <div id="circle-controls" class="control-group">
+   <label for="radius">Радиус:</label>
+   <input type="range" id="radius" min="10" max="200" value="100">
+   <span id="radius-value">100</span>
+  </div>
+
+  <div id="square-controls" class="control-group" style="display: none;">
+   <label for="side">Длина стороны:</label>
+   <input type="range" id="side" min="20" max="300" value="150">
+   <span id="side-value">150</span>
+  </div>
+
+  <div id="polygon-controls" class="control-group" style="display: none;">
+   <label for="sides">Количество сторон:</label>
+   <input type="range" id="sides" min="3" max="12" value="6">
+   <span id="sides-value">6</span>
+   <label for="polygon-radius">Радиус:</label>
+   <input type="range" id="polygon-radius" min="20" max="150" value="80">
+   <span id="polygon-radius-value">80</span>
+  </div>
+ </div>
+
+ <canvas id="drawingCanvas" width="500" height="500"></canvas>
+
+ <script src="script.js"></script>
+</body>
+</html>
